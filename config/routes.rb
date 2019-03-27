@@ -2,7 +2,8 @@ Rails.application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  root 'sections#index'
+
+  root 'subjects#index'
 
   resources :subjects do
   member do   # this adds the delete route

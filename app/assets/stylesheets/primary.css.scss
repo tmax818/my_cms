@@ -1,0 +1,137 @@
+/* Primary stylesheet */
+
+/* Colors */
+$red: red;
+$coral: coral;
+$light_green: green;
+$yellow: white;
+$dark_brown: black;
+$light_brown: black;
+$white: white;
+
+$sans_serif: Verdana, Lucida, Arial, Helvetica, sans-serif;
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  min-width: 980px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: 14px $sans_serif;
+  color: $dark_brown;
+}
+
+p,
+td,
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+  font-family: $sans_serif;
+}
+
+img {
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+
+table tr th,
+table tr td {
+  vertical-align: top;
+  text-align: left;
+  padding: 3px;
+}
+a,
+a:visited {
+  color: $red;
+}
+
+.clear {
+  clear: both;
+}
+.center {
+  text-align: center;
+}
+
+/* Structure */
+#header {
+  height: 4em;
+  padding-top: 1em;
+  text-align: center;
+  background: $red;
+  color: $white;
+
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#main {
+  min-height: 500px;
+  background: $yellow;
+}
+
+#navigation {
+  float: right;
+  width: 100px;
+  min-height: 480px;
+  padding: 10px;
+  background: $coral;
+  color: $light_brown;
+}
+
+#content {
+  padding: 10px;
+}
+
+#footer {
+  clear: both;
+  height: 2.5em;
+  text-align: right;
+  background: $light_brown image-url("footer_gradient.png") repeat-y 0 0;
+  color: $yellow;
+
+  p {
+    margin: 0;
+    padding: 0.5em 1em;
+  }
+}
+
+/* Navigation */
+#navigation {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin-bottom: 0.5em;
+    }
+    ul {
+      margin: 0.5em 0 0 1em;
+      font-size: 0.9em;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    padding: 1px 3px;
+    &:hover {
+      background: $yellow;
+    }
+  }
+}
+
+/* Content */
+#content h2 {
+  color: $light_brown;
+}
