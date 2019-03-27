@@ -14,3 +14,7 @@ subjects = [
   {name: "Python", position: 4, visible: false},
   {name: "JavaScript", position: 5, visible: true},
 ]
+
+subjects.each do |s|
+Subject.create!(s)
+end
